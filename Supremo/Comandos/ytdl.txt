@@ -1,0 +1,4 @@
+pip install https://github.com/coletdjnz/yt-dlp-youtube-oauth2/archive/refs/heads/master.zip
+pip install yt-dlp
+yt-dlp --username oauth2 --password "" https://www.youtube.com/watch?v=hY4ENtZkGFo&pp=wgIGCgQQAhgB
+cp -r /root/.cache /home/bot

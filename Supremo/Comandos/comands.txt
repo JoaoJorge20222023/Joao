@@ -1,0 +1,32 @@
+systemctl enable tt5server
+systemctl start tt5server
+systemctl stop tt5server
+systemctl disable tt5server
+sudo systemctl daemon-reload
+
+systemctl enable spamkiller.service
+systemctl disable spamkiller.service
+sudo systemctl start spamkiller.service
+sudo systemctl stop spamkiller.service && sudo systemctl disable spamkiller.service
+sudo systemctl daemon-reload
+
+systemctl --user enable TTMediaBot
+systemctl --user start TTMediaBot
+systemctl --user stop TTMediaBot
+systemctl --user disable TTMediaBot
+
+mkdir /root/.config/systemd
+mkdir /root/.config/systemd/user
+
+
+
+
+
+
+sudo systemctl enable ttmediabot
+sudo systemctl start ttmediabot
+sudo systemctl daemon-reload
+
+sudo systemctl disable ttmediabot
+sudo systemctl stop ttmediabot
+sudo systemctl daemon-reload

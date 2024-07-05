@@ -1,0 +1,13 @@
+[Unit]
+Description=TTMediaBot Service
+After=network.target
+
+[Service]
+ExecStart=/home/bot/TTMediaBot/TTMediaBot.sh
+WorkingDirectory=/home/bot/TTMediaBot
+Restart=always
+User=bot
+Group=bot
+
+[Install]
+WantedBy=multi-user.target

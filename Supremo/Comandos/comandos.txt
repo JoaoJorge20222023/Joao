@@ -1,0 +1,10 @@
+python3 -m venv meu_ambiente  # Replace "meu_ambiente" with your desired name
+source meu_ambiente/bin/activate
+systemctl --user enable pulseaudio && systemctl --user start pulseaudio
+git clone https://github.com/gumerov-amir/TTMediaBot.git && cd TTMediaBot && pip install --break-system-packages babel beautifulsoup4 patool portalocker pydantic pyshorteners requests vk-api yandex_music youtube-search-python yt-dlp
+git clone https://github.com/gumerov-amir/TTMediaBot.git && cd TTMediaBot && pip3 install -r requirements.txt
+
+cd tools && python3 ttsdk_downloader.py && python3 compile_locales.py
+cd .. && ./TTMediaBot.sh
+
+cd .. && mv config_default.json config.json && ./TTMediaBot.sh
