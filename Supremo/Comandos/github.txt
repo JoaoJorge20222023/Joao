@@ -8,10 +8,14 @@ git clone https://github.com/JoaoJorge20222023/joao
 cd /home/bot/joao/TTMediaBot
 pip install --break-system-packages babel beautifulsoup4 patool portalocker pydantic pyshorteners requests vk-api yandex_music youtube-search-python yt-dlp
 cd tools && python3 ttsdk_downloader.py && python3 compile_locales.py
-cd ..
+cd /home/bot
+pip install https://github.com/coletdjnz/yt-dlp-youtube-oauth2/archive/refs/heads/master.zip
+pip install yt-dlp
+yt-dlp --username oauth2 --password "" https://www.youtube.com/watch?v=hY4ENtZkGFo&pp=wgIGCgQQAhgB
+cd TTMediaBot
 ./TTMediaBot.sh
 cd /home/bot/joao
 7z x spamkiller.zip
 cd SpamKiller
 chmod 777 SpamKiller
-screen ./SpamKiller
+./SpamKiller
