@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt-get install libmpv-dev pulseaudio p7zip-full pyt
 su bot
 systemctl --user enable pulseaudio && systemctl --user start pulseaudio
 cd /home/bot
-git clone https://github.com/JoaoJorge20222023/joao
+git clone https://github.com/JoaoJorge20222023/joao/tree/Master/projects
 cd /home/bot/joao/TTMediaBot
 pip install --break-system-packages babel beautifulsoup4 patool portalocker pydantic pyshorteners requests vk-api yandex_music youtube-search-python yt-dlp
 cd tools && python3 ttsdk_downloader.py && python3 compile_locales.py
